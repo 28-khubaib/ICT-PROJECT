@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Meme Dhaba - Contact / Order Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo"><a href="index.html">The Meme Dhaba</a></div>
+                <nav class="desktop-nav">
+                    <a href="index.html">Home</a>
+                    <a href="table.html">Table</a>
+                    <a href="form.html">Form</a>
+                    <a href="about.html">About</a>
+                </nav>
+                <button id="mobile-menu-btn" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+        <nav id="mobile-menu" class="mobile-nav">
+            <a href="index.html">Home</a>
+            <a href="table.html">Table</a>
+            <a href="form.html">Form</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main class="py-5">
+        <div class="container">
+            <form action="#" method="post" class="simple-form" novalidate>
+                <h1>Order here</h1>
+             
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="you@example.com">
+                </div>
+
+                <fieldset class="form-group">
+                    <legend>Order Type</legend>
+                    <label><input type="radio" name="type" value="dinein" checked> Dine-in</label>
+                    <label><input type="radio" name="type" value="takeaway"> Takeaway</label>
+                    <label><input type="radio" name="type" value="delivery"> Delivery</label>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="item">Select item</label>
+                    <select id="item" name="item">
+                        <option value="biryani">Yeh Biryani Nahi, Pulao Hai! Combo</option>
+                        <option value="roll">Paratha Roll</option>
+                        <option value="pakoray">Moye Moye Pakoray</option>
+                        <option value="pizza">Sigma Chicken Tikka Pizza</option>
+                         <option value="cheesecake">Pawri Ho Rahi Hai Cheesecake</option>
+                          <option value="cold coffe">Kaise Ho Aap? Cold Coffee</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Notes (optional)</label>
+                    <textarea id="notes" name="notes" rows="1" placeholder="Any special requests"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+           <p>&copy; 2025 Meme Menu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
