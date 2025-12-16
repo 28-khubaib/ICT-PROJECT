@@ -330,3 +330,49 @@ footer p {
     color: #555;
      text-align: center;     
 }
+/* Form layout */
+.simple-form {
+    max-width: 720px;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+}
+.simple-form .form-group,
+.simple-form fieldset {
+    margin-bottom: 1.25rem;
+}
+.simple-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #4a2f27;
+}
+.simple-form input[type="text"],
+.simple-form input[type="email"],
+.simple-form select,
+.simple-form textarea {
+    width: 100%;
+    padding: 0.75rem 0.9rem;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+}
+.simple-form textarea {
+    resize: vertical;
+    min-height: 120px; /* gives more vertical breathing room */
+}
+.simple-form .btn {
+    display: inline-block;
+    padding: 0.85rem 1.4rem;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .simple-form {
+        margin: 1rem 12px;
+        padding: 1rem;
+    }
+}
